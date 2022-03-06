@@ -1,0 +1,82 @@
+/* 
+ivory: #ECEAE4
+beige: #E3D7B0
+dark green: #1D3644
+grey mint: #8EA4AA
+*/
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+
+body{
+    padding: 10px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: color: #1D3644;
+    border: 5px solid; color: #1D3644;
+    height: 50px;
+    font-size: 2rem;
+}
+
+main{
+    display: flex;
+    height: calc(100% - 60px);
+    margin-top: 10px;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+    border: 5px solid #1D3644;
+    margin-left: 5px;
+    align-content: flex-start;
+    overflow-y: scroll;
+}
+
+.pic{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 200px;
+    min-height: 150px;
+    padding: 10px;
+    background-color: #E3D7B0;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.pic > img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.pic > span{
+    text-align: center;
+}
+
+@media (max-width: 1220px){
+    .pic{
+        background-color: #1D3644;
+    }
+}
+
+@media (max-width: 700px){
+    .pic{
+        background-color: #8EA4AA;
+    }
+}
+
